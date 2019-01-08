@@ -13961,7 +13961,7 @@ var MyRouter = function (_React$Component) {
 					_reactResponsive2.default,
 					{ query: '(min-device-width: 1224px)' },
 					_react2.default.createElement(
-						_reactRouterDom.BrowserRouter,
+						_reactRouterDom.HashRouter,
 						null,
 						_react2.default.createElement(
 							_reactRouterDom.Switch,
@@ -13976,7 +13976,7 @@ var MyRouter = function (_React$Component) {
 					_reactResponsive2.default,
 					{ query: '(max-device-width: 1224px)' },
 					_react2.default.createElement(
-						_reactRouterDom.BrowserRouter,
+						_reactRouterDom.HashRouter,
 						null,
 						_react2.default.createElement(
 							_reactRouterDom.Switch,
