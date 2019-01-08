@@ -24,7 +24,7 @@ export default class PCUserCenter extends React.Component {
 		let myFetchOptions = {
 			method: 'GET'
 		}
-		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" 
+		fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" 
 		+ localStorage.userid, myFetchOptions)
 		.then(response=>response.json())
 		.then(json=>{

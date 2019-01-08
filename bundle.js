@@ -5471,7 +5471,7 @@ var PCHeader = function (_React$Component) {
 						_react2.default.createElement(
 							'a',
 							{ href: '/', className: 'logo' },
-							_react2.default.createElement('img', { src: '/src/images/logo.png', alt: 'logo' }),
+							_react2.default.createElement('img', { src: './src/images/logo.png', alt: 'logo' }),
 							_react2.default.createElement(
 								'span',
 								null,
@@ -7134,7 +7134,7 @@ var MobileHeader = function (_React$Component) {
 				method: 'GET'
 			};
 			var formData = this.props.form.getFieldsValue();
-			fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action + "&username=" + formData.userName + "&password=" + formData.password + "&r_userName=" + formData.r_userName + "&r_password=" + formData.r_password + "&r_confirmPassword=" + formData.r_confirmPassword, myFetchOptions).then(function (response) {
+			fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action + "&username=" + formData.userName + "&password=" + formData.password + "&r_userName=" + formData.r_userName + "&r_password=" + formData.r_password + "&r_confirmPassword=" + formData.r_confirmPassword, myFetchOptions).then(function (response) {
 				return response.json();
 			}).then(function (json) {
 				_this2.setState({
@@ -7209,7 +7209,7 @@ var MobileHeader = function (_React$Component) {
 				_react2.default.createElement(
 					'header',
 					null,
-					_react2.default.createElement('img', { src: '/src/images/logo.png', alt: 'logo' }),
+					_react2.default.createElement('img', { src: './src/images/logo.png', alt: 'logo' }),
 					_react2.default.createElement(
 						'span',
 						null,
@@ -13030,7 +13030,7 @@ var CommonComments = function (_React$Component) {
 			var myFetchOptions = {
 				method: 'GET'
 			};
-			fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getcomments&uniquekey=" + this.props.uniquekey, myFetchOptions).then(function (response) {
+			fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getcomments&uniquekey=" + this.props.uniquekey, myFetchOptions).then(function (response) {
 				return response.json();
 			}).then(function (json) {
 				_this2.setState({ comments: json });
@@ -13046,7 +13046,7 @@ var CommonComments = function (_React$Component) {
 				method: 'GET'
 			};
 			var formdata = this.props.form.getFieldsValue();
-			fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=comment&userid=" + localStorage.userid + "&uniquekey=" + this.props.uniquekey + "&commnet=" + formdata.remark, myFetchOptions).then(function (response) {
+			fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=comment&userid=" + localStorage.userid + "&uniquekey=" + this.props.uniquekey + "&commnet=" + formdata.remark, myFetchOptions).then(function (response) {
 				return response.json();
 			}).then(function (json) {
 				_this3.componentDidMount();
@@ -13058,7 +13058,7 @@ var CommonComments = function (_React$Component) {
 			var myFetchOptions = {
 				method: 'GET'
 			};
-			fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=uc&userid=" + localStorage.userid + "&uniquekey=" + this.props.uniquekey, myFetchOptions).then(function (response) {
+			fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=uc&userid=" + localStorage.userid + "&uniquekey=" + this.props.uniquekey, myFetchOptions).then(function (response) {
 				return response.json();
 			}).then(function (json) {
 				_notification3.default['success']({ message: 'ReactNews提醒', description: '收藏此文章成功' });
@@ -54969,7 +54969,7 @@ var MobileList = function (_React$Component) {
 				method: 'GET'
 			};
 
-			fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
+			fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
 				return response.json();
 			}).then(function (json) {
 				return _this2.setState({ news: json });
@@ -54989,7 +54989,7 @@ var MobileList = function (_React$Component) {
 				var myFetchOptions = {
 					method: 'GET'
 				};
-				fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + _this3.props.type + "&count=" + _this3.state.count, myFetchOptions).then(function (response) {
+				fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + _this3.props.type + "&count=" + _this3.state.count, myFetchOptions).then(function (response) {
 					return response.json();
 				}).then(function (json) {
 					return _this3.setState({ news: json });
@@ -55482,7 +55482,7 @@ var MobileList = function (_React$Component) {
                 method: 'GET'
             };
 
-            fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
+            fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions).then(function (response) {
                 return response.json();
             }).then(function (json) {
                 return _this2.setState({ news: json });
@@ -55497,7 +55497,7 @@ var MobileList = function (_React$Component) {
                 method: 'GET'
             };
 
-            fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=yule" + "&count=" + this.props.count, myFetchOptions).then(function (response) {
+            fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=yule" + "&count=" + this.props.count, myFetchOptions).then(function (response) {
                 return response.json();
             }).then(function (json) {
                 return _this3.setState({ news: json });
@@ -58728,7 +58728,7 @@ var MobileNewsDetails = function (_React$Component) {
 				method: 'GET'
 			};
 
-			fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnewsitem&uniquekey=" + this.props.params.uniquekey, myFetchOptions).then(function (response) {
+			fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnewsitem&uniquekey=" + this.props.params.uniquekey, myFetchOptions).then(function (response) {
 				return response.json();
 			}).then(function (json) {
 				_this2.setState({ newsItem: json });
@@ -58861,7 +58861,7 @@ var PCUserCenter = function (_React$Component) {
 			var myFetchOptions = {
 				method: 'GET'
 			};
-			fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
+			fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions).then(function (response) {
 				return response.json();
 			}).then(function (json) {
 				_this2.setState({ usercollection: json });

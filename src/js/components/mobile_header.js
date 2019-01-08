@@ -58,7 +58,7 @@ class MobileHeader extends React.Component {
 			method: 'GET'
 		}
 		let formData = this.props.form.getFieldsValue();
-		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action
+		fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action
 		+ "&username="+formData.userName+"&password="+formData.password
 		+"&r_userName=" + formData.r_userName + "&r_password="
 		+ formData.r_password + "&r_confirmPassword="
@@ -124,7 +124,7 @@ class MobileHeader extends React.Component {
 		return (
 			<div id="mobileheader">
 				<header>
-					<img src="/src/images/logo.png" alt="logo" />
+					<img src="./src/images/logo.png" alt="logo" />
 					<span>ReactNews</span>
 					{userShow}
 				</header>

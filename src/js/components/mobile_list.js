@@ -20,7 +20,7 @@ export default class MobileList extends React.Component {
 			method: 'GET'
 		}
 
-		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" 
+		fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" 
 			+ this.props.type + "&count=" 
 			+ this.props.count, myFetchOptions)
 		.then(response => response.json())
@@ -37,7 +37,7 @@ export default class MobileList extends React.Component {
 			let myFetchOptions = {
 				method: 'GET'
 			}
-			fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" 
+			fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" 
 				+ this.props.type + "&count=" 
 				+ this.state.count, myFetchOptions)
 			.then(response => response.json())
