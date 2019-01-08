@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; 
-import {Route, BrowserRouter, Switch} from 'react-router-dom';
+import {Route, HashRouter, Switch} from 'react-router-dom';
 import {Button} from 'antd';
 import PCIndex from './components/pc_index';
 import PCNewsDetails from './components/pc_news_details';
@@ -17,22 +17,22 @@ export default class MyRouter extends React.Component{
 		return (
 			<div>
 				<MediaQuery query='(min-device-width: 1224px)'>
-					<BrowserRouter>
+					<HashRouter>
 						<Switch>
 							<Route exact path="/" component={PCIndex}></Route>
 							<Route path="/details/:uniquekey" component={PCNewsDetails}></Route>
 							<Route path="/usercenter" component={PCUserCenter}></Route>
 						</Switch>
-					</BrowserRouter>
+					</HashRouter>
 				</MediaQuery>
 				<MediaQuery query='(max-device-width: 1224px)'>
-					<BrowserRouter>
+					<HashRouter>
 						<Switch>
 							<Route exact path="/" component={MobileIndex}></Route>
 							<Route path="/details/:uniquekey" component={MobileNewsDetails}></Route>
 							<Route path="/usercenter" component={MobileUserCenter}></Route>
 						</Switch>
-					</BrowserRouter>
+					</HashRouter>
 				</MediaQuery>
 			</div>
 		)
