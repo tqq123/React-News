@@ -1,5 +1,5 @@
 # React-News
-基于React的新闻站点
+基于React的新闻站点,   PC端。。。  移动端有点bug没fix
 
 npm install安装依赖
 
