@@ -18,7 +18,7 @@ export default class PCNewsDetails extends React.Component {
 			method: 'GET'
 		}
 
-		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnewsitem&uniquekey=" 
+		fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getnewsitem&uniquekey=" 
 			+ this.props.match.params.uniquekey, myFetchOptions)
 		.then(response => response.json())
 		.then(json => {

@@ -31,7 +31,7 @@ export default class PCUserCenter extends React.Component {
 			this.setState({usercollection:json});
 		});
 
-		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" 
+		fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=" 
 		+ localStorage.userid, myFetchOptions)
 		.then(response=>response.json())
 		.then(json=>{
@@ -41,7 +41,7 @@ export default class PCUserCenter extends React.Component {
 
 	render() {
 		const props = {
-			action: 'http://newsapi.gugujiankong.com/handler.ashx',
+			action: 'https://newsapi.gugujiankong.com/handler.ashx',
 			headers: {
 				"Access-Control-Allow-Origin":"*"
 			},
